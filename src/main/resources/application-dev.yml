@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: tu_password_mysql_local
+
+  rabbitmq:
+    host: localhost
+    username: guest
+    password: guest
+
+  mail:
+    username: tu_correo@gmail.com
+    password: tu_app_password_gmail
