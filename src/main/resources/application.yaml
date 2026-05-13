@@ -12,6 +12,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+    open-in-view: false
     properties:
       hibernate:
         format_sql: true
@@ -35,4 +36,4 @@ spring:
             enable: true
 
 server:
-  port: 8083
+  port: 8087
