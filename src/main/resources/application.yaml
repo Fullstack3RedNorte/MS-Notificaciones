@@ -3,7 +3,7 @@ spring:
     name: ms-notificaciones
 
   datasource:
-    url: jdbc:mysql://localhost:3306/db_notificaciones
+    url: jdbc:mysql://${DB_URLNOTIFICACIONES:localhost:3306}/db_notificaciones?createDatabaseIfNotExist=true
     username: ${DB_USERNAME:root}
     password: ${DB_PASSWORD:}
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -12,6 +12,7 @@ spring:
     hibernate:
       ddl-auto: update
     show-sql: true
+    open-in-view: false
     properties:
       hibernate:
         format_sql: true
@@ -35,4 +36,4 @@ spring:
             enable: true
 
 server:
-  port: 8083
+  port: 8087

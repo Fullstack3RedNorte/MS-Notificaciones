@@ -1,7 +1,7 @@
 spring:
   datasource:
     username: root
-    password: tu_password_mysql_local
+    password: 
 
   rabbitmq:
     host: localhost
